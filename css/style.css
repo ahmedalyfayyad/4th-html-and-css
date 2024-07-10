@@ -8,17 +8,22 @@
 }
 
 :root {
-  --main-color: #D92B3A;
-  --main-color-alt: #D93030;
-  --background-color: #172621;
-  --background-color-alt: #070D0B;
-  --text-color: #D5F2EF;
-  --text-color-alt: #F2C36B;
-  --color-hover: ##59130D;
+  --special-color: #A62205;
+  --background-color: #730303;
+  --background-color-alt: #630303;
+  --text-color: #D9B589;
+  --text-color-alt: #A66F3F;
   --main-transition: 0.4s;
   --main-padding: 100px;
   --main-radius: 8px;
 }
+
+/* Color Theme Swatches in Hex */
+/* .Fashion-1-hex { color: #D9B589; }
+.Fashion-2-hex { color: #A66F3F; }
+.Fashion-3-hex { color: #A62205; }
+.Fashion-4-hex { color: #400101; }
+.Fashion-5-hex { color: #730303; } */
 
 html {
   scroll-behavior: smooth;
@@ -26,7 +31,9 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
 }
+
 
 /* Reset */
 ul {
@@ -48,8 +55,8 @@ a {
 /* Start Components */
 /* Start Main Title */
 ::selection {
-  color: white;
-  background: var(--main-color);
+  color:var(--text-color-alt);
+  background: var(--background-color-alt);
 }
 /* End Selection */
 /* End Components */
@@ -73,3 +80,13 @@ a {
 }
 
 /* End Responsive */
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  color: var(--text-color);
+  text-transform: capitalize;
+  padding: 30px;
+}
