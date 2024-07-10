@@ -8,11 +8,11 @@
 }
 
 :root {
+  --main-color: #D9B589;
+  --main-color-alt: #A66F3F;
   --special-color: #A62205;
   --background-color: #730303;
   --background-color-alt: #630303;
-  --text-color: #D9B589;
-  --text-color-alt: #A66F3F;
   --main-transition: 0.4s;
   --main-padding: 100px;
   --main-radius: 8px;
@@ -55,8 +55,8 @@ a {
 /* Start Components */
 /* Start Main Title */
 ::selection {
-  color:var(--text-color-alt);
-  background: var(--background-color-alt);
+  color:var(--background-color);
+  background: var(--main-color);
 }
 /* End Selection */
 /* End Components */
@@ -86,7 +86,7 @@ a {
   justify-content: center;
 }
 h1{
-  color: var(--text-color);
+  color: var(--main-color);
   text-transform: capitalize;
   padding: 30px;
 }
