@@ -26,6 +26,7 @@
 .mt-5 {margin-top: 5px;}
 .mt-10 {margin-top: 10px;}
 .mt-20 {margin-top: 20px;}
+.mb-10 {margin-bottom: 10px;}
 .mb-20 {margin-bottom: 20px;}
 .mr-10 {margin-right: 10px;}
 /* End Padding & Margin */
@@ -64,6 +65,7 @@
 }
 /* End Font */
 /* Start Border */
+.b-none{border: none;}
 .rad-8 {border-radius: 8px;}
 .rad-10 {border-radius: 10px;}
 /* End Border */
@@ -76,6 +78,9 @@
 .btn-shape{
     padding: 7px 16px;
     border-radius: 8px;
+    background-color: #D9B589;
+    border: none;
+    font-size: 14px;
 }
 /* End Components */
 
