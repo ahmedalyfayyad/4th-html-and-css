@@ -51,7 +51,18 @@ body {
 ul {
   list-style: none;
 }
-
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--background-base);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--main-color-alt);
+}
 a {
   text-decoration: none;
   color:var(--main-color)
@@ -71,7 +82,7 @@ a {
 /* End Responsive */
 /* Start Page */
 .page{
-  min-height: 100vh;
+  min-height: 200vh;
 }
 /* Start Page */
 /* Start Sidebar */
@@ -173,11 +184,88 @@ a {
 }
 .page .content .head .icons .notification i{
   color:var(--background-color);
-
 }
 .page .content .head .icons img{
-  width: 18px;
+  width: 19px;
   border-radius: 50%;
   margin-left:20px;
 }
 /* End Content Head */
+/* Start Heading */
+.page h1{
+  margin: 20px 20px 40px;
+  color:var(--main-color);
+  position: relative;
+}
+.page h1::before,
+.page h1::after{
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.page h1::before{
+  background-color: var(--main-color);
+  width: 120px;
+}
+.page h1::after{
+  background-color: var(--main-color-alt);
+  width: 40px;
+}
+/* End Heading */
+/* Start Wrapper */
+.page .wrapper{
+  color: var(--main-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width:676px) {
+  .page .wrapper{
+    display: grid;
+    grid-template-columns:minmax(200px,1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 10px;
+  }
+}
+/* End Wrapper */
+/* Start Welcome Wrapper */
+.wrapper .welcome{
+  overflow: hidden;
+}
+.wrapper .welcome .intro{}
+.wrapper .welcome .intro div{}
+.wrapper .welcome .intro > div h2{
+  padding-left: 0;
+  margin-left: 0;
+  
+}
+.wrapper .welcome .intro > div p{
+  padding-left: 0;
+}
+.wrapper .welcome .intro img{
+  width: 200px;
+}
+.wrapper .welcome .body{}
+.wrapper .welcome .body > div{
+  flex: 1;
+}
+.wrapper .welcome .body > div span{}
+.wrapper .welcome .visit{
+  margin: 0 15px 15px auto;
+}
+.wrapper .welcome .visit:hover{
+  background-color: var(--main-color-alt);
+}
+/* Start Media */
+@media (max-width:676px) {
+  .welcome .intro{
+    padding-bottom: 30px;
+  }
+}
+/* End Media */
+/* End Welcome Wrapper */

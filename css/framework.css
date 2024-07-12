@@ -1,7 +1,21 @@
 /* Start Display */
 .d-flex {display: flex;}
+.d-grid{display: grid;}
+.d-block{display: block;}
+.gap-20{gap:20px;}
 .align-center {align-items: center;}
+.space-between{justify-content: space-between;}
 .w-full {width: 100%;}
+.w-fit {width: fit-content;}
+
+@media (max-width:767px) {
+    .block-mobile{
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
 /* End Display */
 /* Start Padding & Margin */
 .p-10 {padding: 10px;}
@@ -9,7 +23,11 @@
 .p-20 {padding:20px;}
 .m-20 {margin:20px;}
 .mt-0 {margin-top: 0;}
+.mt-5 {margin-top: 5px;}
+.mt-10 {margin-top: 10px;}
+.mt-20 {margin-top: 20px;}
 .mb-20 {margin-bottom: 20px;}
+.mr-10 {margin-right: 10px;}
 /* End Padding & Margin */
 /* Start Color */
 /* Color Theme Swatches in Hex */
@@ -19,7 +37,16 @@
 .c-red-alt { color: #630303; }
 .c-red-3{ color: #400101; }
 .c-white{color:white;}
+.c-sub{color: #a7a7a7;}
+.c-black{color: #121212;}
 .bg-black{background-color: #121212;}
+.bg-sub{background-color: #a7a7a7;}
+.bg-red-alt { background-color: #630303; }
+.bg-red-3{ background-color: #400101; }
+.bg-gold { background-color: #D9B589; }
+.bg-gold-alt { background-color: #A66F3F; }
+
+
 /* Start Color */
 /* Start position */
 .p-relative {position: relative;}
@@ -28,15 +55,27 @@
 .txt-c {text-align: center;}
 .fs-14 {font-size: 14px;}
 .txt-tf-c{text-transform: capitalize;}
+.txt-tf-uc{text-transform: uppercase;}
+
+@media (max-width:767px) {
+    .txt-c-mobile{
+        text-align: center;
+    }
+}
 /* End Font */
 /* Start Border */
-rad-8 {border-radius: 8px;}
+.rad-8 {border-radius: 8px;}
+.rad-10 {border-radius: 10px;}
 /* End Border */
 /* Start Components */
 .between-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.btn-shape{
+    padding: 7px 16px;
+    border-radius: 8px;
 }
 /* End Components */
 
