@@ -122,3 +122,62 @@ a {
 }
 /* End Media */
 /* End Sidebar */
+/* Start Content */
+/* Start Content */
+.page .content{
+  overflow: hidden;
+}
+.page .content .head .search::before{
+  font-family:"Font Awesome 6 Free";
+  content: "\f002";
+  font-weight: 900;
+  color:var(--text-subdued);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+}
+.page .content .head .search input{
+  border-radius: var(--main-radius);
+  padding-left: 35px;
+  outline: none;
+  border: none;
+  width: 190px;
+  transition: .3s;
+}
+.page .content .head .search input::placeholder{
+  color: var(--text-subdued);
+  font-size: 12px;
+  position: absolute;
+}
+.page .content .head .search input:focus{
+  width: 220px;
+  caret-color: var(--background-color);
+}
+.page .content .head .search input:focus::placeholder{
+  opacity: 0;
+}
+.page .content .head .icons{
+  margin: 0 20px;
+}
+.page .content .head .icons .notification::before{
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0;
+  top:0px;
+  border-radius: 50%;
+}
+.page .content .head .icons .notification i{
+  color:var(--background-color);
+
+}
+.page .content .head .icons img{
+  width: 18px;
+  border-radius: 50%;
+  margin-left:20px;
+}
+/* End Content Head */
