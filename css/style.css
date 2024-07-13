@@ -309,6 +309,121 @@ textarea:focus::placeholder {
   height: 240px;
 }
 .wrapper .quick-draft .save {
-  margin: 0 15px 15px auto;
+  margin-left:auto;
 }
-/* End Welcome Wrapper */
+/* Start Target Widget */
+.target .target-row .icon{
+  width: 80px;
+  height: 80px;
+  background-color: var(--background-base);
+}
+.target .details{
+  flex: 1;
+}
+.target .details .progress{
+  height: 4px;
+}
+.target .details .progress > span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.target .details .progress > span span{
+  position: absolute;
+  bottom: 16px;
+  right: -17px;
+  padding: 3px 5px;
+  border-radius: var(--main-radius);
+  font-size: 14px;
+}
+.target .details .progress > span span::after{
+  content: "";
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  bottom: -10px;
+  border-top-color: var(--background-base);
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* End Target Widget */
+/* Start Tickets Widget */
+.tickets .box{
+  background-color: var(--background-base);
+  width: calc(50% - 10px);
+  border:1px solid  ;
+}
+/* Start Media */
+@media (max-width: 676px) {
+  .tickets .box{
+    width: 100%;
+  }
+}
+/* End Media */
+/* Start Tickets Widget */
+/* Start Latest Widget */
+.latest-news .news-row:not(:last-of-type){
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.latest-news .news-row img{
+  width: 100px;
+  border-radius: var(--main-radius);
+  margin-right: 15px;
+}
+.latest-news .news-row .info{
+  flex-grow: 1;
+}
+/* Start Media */
+@media (max-width: 676px) {
+  .latest-news .news-row{
+    display: block;
+  }
+  .latest-news .news-row .label{
+    width: fit-content;
+    margin: 15px auto;
+  }
+}
+/* End Media */
+/* End Latest Widget */
+/* Start Tasks Widget */
+.tasks .task-row:not(:last-of-type){
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--main-color-alt);
+}
+.tasks .info{
+  flex-grow: 1;
+}
+.tasks .done{
+  text-decoration: line-through;
+  opacity: .4;
+}
+.tasks .delete{
+  cursor: pointer;
+  transition: .3s;
+}
+.tasks .delete:hover{
+  color: var(--main-color-alt);
+}
+/* Start Media */
+@media (max-width: 676px) {
+  .tasks .task-row{
+    display: block;
+  }
+  .tasks .task-row .delete{
+    margin: 15px auto;
+  }
+}
+/* End Media */
+/* End Tasks Widget */
+/* Start Search Items Widget */
+.search-items .items:not(:last-of-type){
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--main-color-alt);
+}
+
+/* End Search Items Widget */
