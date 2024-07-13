@@ -425,5 +425,65 @@ textarea:focus::placeholder {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--main-color-alt);
 }
-
 /* End Search Items Widget */
+/* Start Latest Upload Widget */
+.latest-uploads ul li:not(:last-child){
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--main-color-alt);
+}
+.latest-uploads ul li img{
+  width: 50px;
+  opacity: .8;
+}
+/* End Latest Upload Widget */
+/* Start Last Project Widget */
+.last-project ul::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 10px;
+  background-color: var(--main-color-alt);
+}
+.last-project ul li::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  border: 1px solid var(--background-color);
+  outline: 1px solid white;
+  margin-right: 15px;
+  z-index: 1;
+}
+.last-project ul li.done::before{
+  background-color: var(--main-color-alt);
+}
+.last-project ul li.current::before{
+  animation: change-color 0.8s infinite alternate;
+}
+.last-project img{
+  position: absolute;
+  width: 160px;
+  right: 10px;
+  bottom: 0;
+  opacity: .8;
+}
+/* Start Animation */
+@keyframes change-color {
+  from{
+    background-color: var(--main-color);
+  }
+  to {
+    background-color: var(--main-color-alt);
+  }
+}
+/* End Animation */
+@media (max-width: 676px) {
+  .last-project img{
+    opacity: .3;
+  }
+}
+/* End Last Project Widget */

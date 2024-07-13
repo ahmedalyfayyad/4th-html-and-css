@@ -27,6 +27,8 @@
 .mt-5 {margin-top: 5px;}
 .mt-10 {margin-top: 10px;}
 .mt-20 {margin-top: 20px;}
+.mt-25 {margin-top: 25px;}
+.mr-10 {margin-right: 10px;}
 .mb-5 {margin-bottom: 5px;}
 .mb-10 {margin-bottom: 10px;}
 .mb-20 {margin-bottom: 20px;}
@@ -62,6 +64,7 @@
 .txt-c {text-align: center;}
 .fs-14 {font-size: 14px;}
 .fs-13 {font-size: 13px;}
+.fs-15 {font-size: 15px;}
 .fs-16 {font-size: 16px;}
 .fs-24 {font-size: 24px;}
 .fs-28 {font-size: 28px;}
