@@ -8,6 +8,9 @@
 .space-between{justify-content: space-between;}
 .w-full {width: 100%;}
 .w-fit {width: fit-content;}
+.txt.align{
+    text-align: center;
+}
 
 @media (max-width:767px) {
     .block-mobile{
@@ -22,16 +25,24 @@
 .p-10 {padding: 10px;}
 .p-15 {padding: 15px;}
 .p-20 {padding:20px;}
+.pt-5 {padding-top:5px;}
+.pt-20 {padding-top:20px;}
+.pb-20 {padding-bottom:20px;}
+.pl-15 {padding:15px;}
 .m-20 {margin:20px;}
 .mt-0 {margin-top: 0;}
 .mt-5 {margin-top: 5px;}
 .mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
 .mt-20 {margin-top: 20px;}
 .mt-25 {margin-top: 25px;}
+.mt-45 {margin-top: 45px;}
 .mr-10 {margin-right: 10px;}
+.mr-15 {margin-right: 15px;}
 .mb-5 {margin-bottom: 5px;}
 .mb-10 {margin-bottom: 10px;}
 .mb-20 {margin-bottom: 20px;}
+.mb-25 {margin-bottom: 25px;}
 .mr-10 {margin-right: 10px;}
 /* End Padding & Margin */
 /* Start Color */
@@ -82,6 +93,7 @@
 .b-none{border: none;}
 .rad-8 {border-radius: 8px;}
 .rad-10 {border-radius: 10px;}
+.rad-half {border-radius: 50%;}
 /* End Border */
 /* Start Components */
 .center-flex{

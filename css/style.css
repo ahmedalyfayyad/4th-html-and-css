@@ -121,9 +121,7 @@ textarea:focus::placeholder {
 
 /* End Responsive */
 /* Start Page */
-.page {
-  min-height: 200vh;
-}
+
 /* Start Page */
 /* Start Sidebar */
 .page .sidebar {
@@ -434,7 +432,7 @@ textarea:focus::placeholder {
 }
 .latest-uploads ul li img{
   width: 50px;
-  opacity: .8;
+  opacity: .7;
 }
 /* End Latest Upload Widget */
 /* Start Last Project Widget */
@@ -442,7 +440,7 @@ textarea:focus::placeholder {
   content: "";
   position: absolute;
   width: 2px;
-  height: 100%;
+  height: 90%;
   left: 10px;
   background-color: var(--main-color-alt);
 }
@@ -452,7 +450,6 @@ textarea:focus::placeholder {
   height: 20px;
   display: block;
   border-radius: 50%;
-  background-color: var(--main-color);
   border: 1px solid var(--background-color);
   outline: 1px solid white;
   margin-right: 15px;
@@ -474,7 +471,7 @@ textarea:focus::placeholder {
 /* Start Animation */
 @keyframes change-color {
   from{
-    background-color: var(--main-color);
+    background-color: var(--background-color);
   }
   to {
     background-color: var(--main-color-alt);
@@ -487,3 +484,63 @@ textarea:focus::placeholder {
   }
 }
 /* End Last Project Widget */
+/* Start Reminders Widget */
+.reminders ul li .key{
+  width: 15px;
+  height:15px;
+  background-color: var(--main-color-alt);
+}
+.reminders ul .color{
+  border-left: 1px solid var(--main-color);
+}
+/* End Reminders Widget */
+/* Start Posts Widget */
+.latest-post .avater{
+  width: 48px;
+  height: 48px;
+}
+.latest-post .post-content{
+  line-height: 1.8;
+  border-top: 1px solid #d9b58917;
+  border-bottom: 1px solid #d9b58917;
+}
+/* End Posts Widget */
+/* Start Social Media Widget */
+.social-media{
+  overflow: hidden;
+}
+.social-media .box{
+  padding-left: 70px;
+}
+.social-media .box i{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 52px;
+  transition: .3s;
+  line-height: 1.9;
+}
+.social-media .box i:hover{
+  transform: translateX(5px);
+}
+/* End Social Media Widget */
+/* Start Project Table Widget */
+.projects{
+}
+.projects .responsive-table{
+  overflow-x: auto;
+}
+.projects table{
+  min-width: 1000px;
+}
+.projects table td{
+  background-color: var(--background-color);
+  padding: 15px;
+}
+.projects table tr:hover td{
+  background-color: var(--background-color-alt);
+}
+.projects tbody td{
+  border: 1px solid #d9b58917;
+}
+/* End Project Table Widget */
