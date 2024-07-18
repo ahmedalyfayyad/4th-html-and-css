@@ -120,8 +120,11 @@ textarea:focus::placeholder {
 /* Start Responsive */
 
 /* End Responsive */
+/* Start Dashboard */
 /* Start Page */
-
+.page {
+  min-height: 200vh;
+}
 /* Start Page */
 /* Start Sidebar */
 .page .sidebar {
@@ -544,3 +547,44 @@ textarea:focus::placeholder {
   border: 1px solid #d9b58917;
 }
 /* End Project Table Widget */
+/* End Dashboard */
+/* Start Settings */
+.toggle-checkbox{
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.toggle-switch{
+  background-color: var(--background-base);
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background-color: var(--background-color);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--main-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+}
+/* End Settings */
+
