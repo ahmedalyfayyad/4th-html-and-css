@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <div class="page d-flex">
+    <div class="page d-flex ">
         <div class="sidebar bg-black p-20 p-relative">
             <a href="index.html"> <img src="images/logo-tp (1).png" alt="Logo" style="width: 40px;"></a>
             <h3 class="p-relative txt-c mt-0 mb-20 c-red">molatham</h3>
@@ -113,11 +113,135 @@
             </div>
             <!-- End Head -->
             <h1 class="p-relative">Settings</h1>
-            <div class="settings-html">
+            <div class="settings-page m-10 d-grid gap-10">
+                <!--
                 <label for="toggle">
                     <input class="toggle-checkbox" type="checkbox" id="toggle" checked>
                     <div class="toggle-switch"></div>
-                </label>
+                </label> 
+                -->
+                <!-- Start Setting box -->
+                <div class="m-20 d-grid txt-tf-c p-20 bg-red-alt rad-10">
+                    <h2 class="mt-0  mb-10 c-gold">site control</h2>
+                    <p class="mt-0 mb-20 t c-gold">control the website if there is maintenance</p>
+                    <div class="line"></div>
+                    <div class="mb-15 d-flex space-between ">
+                        <div>
+                            <h4 class="c-gold mb-5">website control</h4>
+                            <p class="c-gold-alt">open/close website and type the reason</p>
+                        </div>
+                        <div>
+                            <label for="site-control">
+                                <input class="toggle-checkbox" type="checkbox" id="site-control" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea class="" placeholder="write reasons here"></textarea>
+                </div>
+                <!-- End Setting box -->
+                <!-- Start General Info box -->
+                <div class="m-20 txt-tf-c p-20 bg-red-alt rad-10">
+                    <h2 class="mt-0  mb-10 c-gold">general info</h2>
+                    <p class="mt-0 mb-20 t c-gold">general information about your account</p>
+                    <div class="line"></div>
+                    <div class="mb-15">
+                        <label class="c-gold-alt ml-2" for="first">firs name</label>
+                        <input class="p-10 d-block w-full mt-10" type="text" id="first" placeholder="First name">
+                    </div>
+                    <div class="mb-15">
+                        <label class="c-gold-alt ml-2" for="last">last name</label>
+                        <input class="p-10 d-block w-full mt-10" type="text" id="last" placeholder="Last name">
+                    </div>
+                    <div class="">
+                        <label class="c-gold-alt ml-2 d-block" for="email">email</label>
+                        <input class=" email p-10 w-full mt-10 mr-10" type="email" id="email"
+                            placeholder="ahmedalyfayyad@gmail.com" disabled>
+                        <a href="" class="fw-bold">change</a>
+                    </div>
+                </div>
+                <!-- End General Info box -->
+                <!-- Start Security Info -->
+                <div class="m-20 txt-tf-c p-20 bg-red-alt rad-10">
+                    <h2 class="mt-0  mb-10 c-gold">security info</h2>
+                    <p class="mt-0 mb-20 t c-gold">security information about your account</p>
+                    <div class="line"></div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span class="c-gold">password</span>
+                            <p class="c-gold-alt mt-5">last change on 23/6/2024</p>
+                        </div>
+                        <a href="" class="btn-shape">change</a>
+                    </div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span class="c-gold">two-factor authentication</span>
+                            <p class="c-gold-alt mt-5">enable/disable feature</p>
+                        </div>
+                        <label for="sec-info">
+                            <input class="toggle-checkbox" type="checkbox" id="sec-info">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span class="c-gold">devices</span>
+                            <p class="c-gold-alt mt-5">check the login devices list</p>
+                        </div>
+                        <a href="" class="fw-bold mr-10">devices</a>
+                    </div>
+                </div>
+                <!-- End Security Info -->
+                <!-- Start Social Media Info -->
+                <div class="social-boxes m-20 txt-tf-c p-20 bg-red-alt rad-10">
+                    <h2 class="mt-0  mb-10 c-gold">social media info</h2>
+                    <p class="mt-0 mb-20 t c-gold">social media information</p>
+                    <div class="line"></div>
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-twitter center-flex"></i>
+                        <input class="w-full" type="text" placeholder="Twitter Username">
+                    </div>
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-facebook center-flex"></i>
+                        <input class="w-full" type="text" placeholder="facebook Username">
+                    </div>
+                    <div class="d-flex align-center mb-15">
+                        <i class="fa-brands fa-youtube center-flex"></i>
+                        <input class="w-full" type="text" placeholder="youtube Username">
+                    </div>
+                </div>
+                <!-- End Social Media Info -->
+                <!-- Start Widgets Control Info -->
+                <div class="widgets-control m-20 txt-tf-c p-20 bg-red-alt rad-10">
+                    <h2 class="mt-0  mb-10 c-gold">widgets control</h2>
+                    <p class="mt-0 mb-20 t c-gold">show/hide widgets</p>
+                    <div class="line"></div>
+                    <div class="control d-flex align-center mb-15">
+                        <input class="" type="checkbox" id="one">
+                        <label class="c-gold" for="one">quick draft</label>
+                    </div>
+                    <div class="control d-flex align-center mb-15">
+                        <input class="" type="checkbox" id="two">
+                        <label class="c-gold" for="two">yearly targets</label>
+                    </div>
+                    <div class="control d-flex align-center mb-15">
+                        <input class="" type="checkbox" id="three">
+                        <label class="c-gold" for="three">tickets statistics</label>
+                    </div>
+                    <div class="control d-flex align-center mb-15">
+                        <input class="" type="checkbox" id="four">
+                        <label class="c-gold" for="four">latest news</label>
+                    </div>
+                    <div class="control d-flex align-center mb-15">
+                        <input class="" type="checkbox" id="five">
+                        <label class="c-gold" for="five">latest tasks</label>
+                    </div>
+                    <div class="control d-flex align-center mb-15">
+                        <input class="" type="checkbox" id="six">
+                        <label class="c-gold" for="six">top search items</label>
+                    </div>
+                </div>
+                <!-- End Widgets Control Info -->
             </div>
         </div>
     </div>

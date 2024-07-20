@@ -549,10 +549,39 @@ textarea:focus::placeholder {
 /* End Project Table Widget */
 /* End Dashboard */
 /* Start Settings */
+.settings-page{
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.settings-page .email{
+  display: inline-flex;
+  width: calc(100% - 90px);
+}
+.settings-page .social-boxes i{
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  border: 1px solid var(--background-base);
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: .3s;
+}
+.settings-page .social-boxes input{
+  height: 40px;
+  border: 1px solid var(--background-base);
+  border-left: none;
+  padding: 15px;
+  border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within i{
+  color: var(--background-color);
+}
 .toggle-checkbox{
   -webkit-appearance: none;
   appearance: none;
   display: none;
+}
+.widgets-control .control label{
+  
 }
 .toggle-switch{
   background-color: var(--background-base);
@@ -578,6 +607,7 @@ textarea:focus::placeholder {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  color: var(--main-color);
 }
 .toggle-checkbox:checked + .toggle-switch {
   background-color: var(--main-color);
@@ -586,5 +616,13 @@ textarea:focus::placeholder {
   content: "\f00c";
   left: 50px;
 }
+/* Start Media */
+@media (max-width:676px) {
+  .settings-page{
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+  }
+}
+/* End Media */
 /* End Settings */
 
