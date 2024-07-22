@@ -94,7 +94,7 @@
 .b-none{border: none;}
 .rad-8 {border-radius: 8px;}
 .rad-10 {border-radius: 10px;}
-.rad-half {border-radius: 50%;}
+.rad-half {border-radius>: 50%;}
 /* End Border */
 /* Start Components */
 .center-flex{

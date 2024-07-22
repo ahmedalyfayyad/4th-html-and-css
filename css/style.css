@@ -575,13 +575,21 @@ textarea:focus::placeholder {
 .settings-page .social-boxes > div:focus-within i{
   color: var(--background-color);
 }
+.widgets-control .control input{
+  padding: 3px;
+}
+.widgets-control .control label{
+  margin-left:20px;
+  cursor: pointer;
+  position: relative;
+}
+.widgets-control .control label{
+
+}
 .toggle-checkbox{
   -webkit-appearance: none;
   appearance: none;
   display: none;
-}
-.widgets-control .control label{
-  
 }
 .toggle-switch{
   background-color: var(--background-base);
