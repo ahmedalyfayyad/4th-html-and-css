@@ -578,12 +578,14 @@ textarea:focus::placeholder {
 .widgets-control .control input{
   padding: 3px;
 }
-.widgets-control .control label{
+.widgets-control .control label,
+.backup-control .control label{
   padding-left:30px;
   cursor: pointer;
   position: relative;
 }
-.widgets-control .control label::before{
+.widgets-control .control label::before,
+.backup-control .control label::before{
   content:"";
   position:absolute;
   width: 20px;
@@ -591,7 +593,11 @@ textarea:focus::placeholder {
   background-color: var(--main-color);
   left:0;
 }
-.widgets-control .control label:hover::before{
+.backup-control .control label::before{
+  border-radius: 50%;
+}
+.widgets-control .control label:hover::before,
+.backup-control .control label:hover::before{
   background-color: var(--main-color-alt);
 }
 .widgets-control .control label::after{
@@ -604,11 +610,38 @@ textarea:focus::placeholder {
   transform: scale(0) rotate(360deg);
   transition: .3s;
 }
-.widgets-control .control input[type="checkbox"]:checked +label::after{
+.backup-control .control label::after{
+  content:"";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  left: 1.5px;
+  top:1.5px;
+  color:var(--background-color);
+  transform: scale(0);
+  transition: .3s;
+}
+.widgets-control .control input[type="checkbox"]:checked +label::after,
+.backup-control .control input[type="radio"]:checked +label::after{
   transform: scale(1);
 }
+
+.backup-control .servers .server{
+  border: 1px solid var(--main-color);
+  border-radius: var(--main-radius);
+}
+.backup-control .servers .server label{
+  cursor: pointer;
+}
+.backup-control .servers input[type="radio"]:checked + .server{
+  border-color: var(--main-color-alt);
+  color: var(--main-color-alt);
+}
 .toggle-checkbox,
-.widgets-control input{
+.widgets-control input,
+.backup-control input{
   -webkit-appearance: none;
   appearance: none;
   display: none;
@@ -651,6 +684,9 @@ textarea:focus::placeholder {
   .settings-page{
     grid-template-columns: minmax(200px, 1fr);
     gap: 10px;
+  }
+  .backup-control .servers .server{
+    flex-wrap: wrap;
   }
 }
 /* End Media */
