@@ -685,6 +685,38 @@ textarea:focus::placeholder {
 /* End Media */
 /* End Settings Page */
 /* Start Profile Page*/
+.profile-page .avater-box{
+  width: 300px;
+}
+.profile-page .avater-box > img{}
+.profile-page .avater-box .level{
+  height: 8px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+.profile-page .avater-box .level span{
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+  background-color: var(--main-color);
+}
+.profile-page .avater-box{}
 
+
+
+/* Start Media */
+@media (min-width:768px) {
+  .profile-page .avater-box{
+    border-right: 1px solid var(--main-color);
+  }
+}
+@media (max-width:768px) {
+  .profile-page .overview{
+    flex-direction: column ;
+  }
+}
+/* End Media */
 /* End Profile Page */
 
