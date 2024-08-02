@@ -704,17 +704,26 @@ textarea:focus::placeholder {
 }
 .profile-page .info-box .box{
   flex-wrap: wrap;
-  border-bottom: 1px solid;
   transition: .3s;
 }
-.profile-page .info-box .box:hover{
-
-}
 .profile-page .info-box .box > div{
-
+  min-width: 250px;
+  padding: 10px 0 0;
 }
 .profile-page .info-box > div h4{
   font-weight: normal;
+}
+.profile-page .skills-card{
+  
+}
+.profile-page .skills-card ul{
+  
+}
+.profile-page .skills-card ul li{
+
+}
+.profile-page .activities{
+  flex-grow: 1;
 }
 
 /* Start Media */
@@ -726,6 +735,9 @@ textarea:focus::placeholder {
 @media (max-width:768px) {
   .profile-page .overview{
     flex-direction: column ;
+  }
+  .profile-page .other-data{
+    flex-direction: column;
   }
 }
 /* End Media */
