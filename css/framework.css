@@ -3,6 +3,7 @@
 .f-wrap{flex-wrap: wrap;}
 .d-grid{display: grid;}
 .d-block{display: block;}
+.d-in-block{display:inline-block;}
 .gap-20{gap:20px;}
 .align-center {align-items: center;}
 .space-between{justify-content: space-between;}

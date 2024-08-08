@@ -714,16 +714,31 @@ textarea:focus::placeholder {
   font-weight: normal;
 }
 .profile-page .skills-card{
-  
+  flex-grow: 1;
+
 }
 .profile-page .skills-card ul{
   
 }
 .profile-page .skills-card ul li{
-
+  padding: 15px 0;
 }
+.profile-page .skills-card ul li:not(:last-child){
+  border-bottom: 1px solid var(--main-color);
+}
+.profile-page .skills-card ul li span{
+  display: inline-flex;
+  padding:4px 10px;
+  color: var(--background-base);
+  background-color: var(--main-color);
+  border-radius: var(--main-radius);
+}
+.profile-page .skills-card ul li span:not(:last-child){
+  margin-right: 7px;
+}
+
 .profile-page .activities{
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 /* Start Media */
