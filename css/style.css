@@ -307,31 +307,31 @@ textarea:focus::placeholder {
 }
 /* End Media */
 /* End Welcome Wrapper */
-.wrapper .quick-draft form textarea{
+.wrapper .quick-draft form textarea {
   height: 240px;
 }
 .wrapper .quick-draft .save {
-  margin-left:auto;
+  margin-left: auto;
 }
 /* Start Target Widget */
-.target .target-row .icon{
+.target .target-row .icon {
   width: 80px;
   height: 80px;
   background-color: var(--background-base);
 }
-.target .details{
+.target .details {
   flex: 1;
 }
-.target .details .progress{
+.target .details .progress {
   height: 4px;
 }
-.target .details .progress > span{
+.target .details .progress > span {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
 }
-.target .details .progress > span span{
+.target .details .progress > span span {
   position: absolute;
   bottom: 16px;
   right: -17px;
@@ -339,7 +339,7 @@ textarea:focus::placeholder {
   border-radius: var(--main-radius);
   font-size: 14px;
 }
-.target .details .progress > span span::after{
+.target .details .progress > span span::after {
   content: "";
   border-color: transparent;
   border-width: 5px;
@@ -352,38 +352,38 @@ textarea:focus::placeholder {
 }
 /* End Target Widget */
 /* Start Tickets Widget */
-.tickets .box{
+.tickets .box {
   background-color: var(--background-base);
   width: calc(50% - 10px);
-  border:1px solid  ;
+  border: 1px solid;
 }
 /* Start Media */
 @media (max-width: 676px) {
-  .tickets .box{
+  .tickets .box {
     width: 100%;
   }
 }
 /* End Media */
 /* Start Tickets Widget */
 /* Start Latest Widget */
-.latest-news .news-row:not(:last-of-type){
+.latest-news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-.latest-news .news-row img{
+.latest-news .news-row img {
   width: 100px;
   border-radius: var(--main-radius);
   margin-right: 15px;
 }
-.latest-news .news-row .info{
+.latest-news .news-row .info {
   flex-grow: 1;
 }
 /* Start Media */
 @media (max-width: 676px) {
-  .latest-news .news-row{
+  .latest-news .news-row {
     display: block;
   }
-  .latest-news .news-row .label{
+  .latest-news .news-row .label {
     width: fit-content;
     margin: 15px auto;
   }
@@ -391,56 +391,56 @@ textarea:focus::placeholder {
 /* End Media */
 /* End Latest Widget */
 /* Start Tasks Widget */
-.tasks .task-row:not(:last-of-type){
+.tasks .task-row:not(:last-of-type) {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--main-color-alt);
 }
-.tasks .info{
+.tasks .info {
   flex-grow: 1;
 }
-.tasks .done{
+.tasks .done {
   text-decoration: line-through;
-  opacity: .4;
+  opacity: 0.4;
 }
-.tasks .delete{
+.tasks .delete {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.tasks .delete:hover{
+.tasks .delete:hover {
   color: var(--main-color-alt);
 }
 /* Start Media */
 @media (max-width: 676px) {
-  .tasks .task-row{
+  .tasks .task-row {
     display: block;
   }
-  .tasks .task-row .delete{
+  .tasks .task-row .delete {
     margin: 15px auto;
   }
 }
 /* End Media */
 /* End Tasks Widget */
 /* Start Search Items Widget */
-.search-items .items:not(:last-of-type){
+.search-items .items:not(:last-of-type) {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--main-color-alt);
 }
 /* End Search Items Widget */
 /* Start Latest Upload Widget */
-.latest-uploads ul li:not(:last-child){
+.latest-uploads ul li:not(:last-child) {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--main-color-alt);
 }
-.latest-uploads ul li img{
+.latest-uploads ul li img {
   width: 50px;
-  opacity: .7;
+  opacity: 0.7;
 }
 /* End Latest Upload Widget */
 /* Start Last Project Widget */
-.last-project ul::before{
+.last-project ul::before {
   content: "";
   position: absolute;
   width: 2px;
@@ -448,7 +448,7 @@ textarea:focus::placeholder {
   left: 10px;
   background-color: var(--main-color-alt);
 }
-.last-project ul li::before{
+.last-project ul li::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -459,22 +459,22 @@ textarea:focus::placeholder {
   margin-right: 15px;
   z-index: 1;
 }
-.last-project ul li.done::before{
+.last-project ul li.done::before {
   background-color: var(--main-color-alt);
 }
-.last-project ul li.current::before{
+.last-project ul li.current::before {
   animation: change-color 0.8s infinite alternate;
 }
-.last-project img{
+.last-project img {
   position: absolute;
   width: 160px;
   right: 10px;
   bottom: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
 /* Start Animation */
 @keyframes change-color {
-  from{
+  from {
     background-color: var(--background-color);
   }
   to {
@@ -483,170 +483,170 @@ textarea:focus::placeholder {
 }
 /* End Animation */
 @media (max-width: 676px) {
-  .last-project img{
-    opacity: .3;
+  .last-project img {
+    opacity: 0.3;
   }
 }
 /* End Last Project Widget */
 /* Start Reminders Widget */
-.reminders ul li .key{
+.reminders ul li .key {
   width: 15px;
-  height:15px;
+  height: 15px;
   background-color: var(--main-color-alt);
 }
-.reminders ul .color{
+.reminders ul .color {
   border-left: 1px solid var(--main-color);
 }
 /* End Reminders Widget */
 /* Start Posts Widget */
-.latest-post .avater{
+.latest-post .avater {
   width: 48px;
   height: 48px;
 }
-.latest-post .post-content{
+.latest-post .post-content {
   line-height: 1.8;
   border-top: 1px solid #d9b58917;
   border-bottom: 1px solid #d9b58917;
 }
 /* End Posts Widget */
 /* Start Social Media Widget */
-.social-media{
+.social-media {
   overflow: hidden;
 }
-.social-media .box{
+.social-media .box {
   padding-left: 70px;
 }
-.social-media .box i{
+.social-media .box i {
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   width: 52px;
-  transition: .3s;
+  transition: 0.3s;
   line-height: 1.9;
 }
-.social-media .box i:hover{
+.social-media .box i:hover {
   transform: translateX(5px);
 }
 /* End Social Media Widget */
 /* Start Project Table Widget */
-.projects{
+.projects {
 }
-.projects .responsive-table{
+.projects .responsive-table {
   overflow-x: auto;
 }
-.projects table{
+.projects table {
   min-width: 1000px;
 }
-.projects table td{
+.projects table td {
   background-color: var(--background-color);
   padding: 15px;
 }
-.projects table tr:hover td{
+.projects table tr:hover td {
   background-color: var(--background-color-alt);
 }
-.projects tbody td{
+.projects tbody td {
   border: 1px solid #d9b58917;
 }
 /* End Project Table Widget */
 /* End Dashboard Page*/
 /* Start Settings Page*/
-.settings-page{
+.settings-page {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
-.settings-page .email{
+.settings-page .email {
   display: inline-flex;
   width: calc(100% - 90px);
 }
-.settings-page .social-boxes i{
+.settings-page .social-boxes i {
   width: 40px;
   height: 40px;
   background-color: var(--main-color);
   border: 1px solid var(--background-base);
   border-right: none;
   border-radius: 6px 0 0 6px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.settings-page .social-boxes input{
+.settings-page .social-boxes input {
   height: 40px;
   border: 1px solid var(--background-base);
   border-left: none;
   padding: 15px;
   border-radius: 0 6px 6px 0;
 }
-.settings-page .social-boxes > div:focus-within i{
+.settings-page .social-boxes > div:focus-within i {
   color: var(--background-color);
 }
-.widgets-control .control input{
+.widgets-control .control input {
   padding: 3px;
 }
 .widgets-control .control label,
-.backup-control .control label{
-  padding-left:30px;
+.backup-control .control label {
+  padding-left: 30px;
   cursor: pointer;
   position: relative;
 }
 .widgets-control .control label::before,
-.backup-control .control label::before{
-  content:"";
-  position:absolute;
+.backup-control .control label::before {
+  content: "";
+  position: absolute;
   width: 20px;
   height: 20px;
   background-color: var(--main-color);
-  left:0;
+  left: 0;
 }
-.backup-control .control label::before{
+.backup-control .control label::before {
   border-radius: 50%;
 }
 .widgets-control .control label:hover::before,
-.backup-control .control label:hover::before{
+.backup-control .control label:hover::before {
   background-color: var(--main-color-alt);
 }
-.widgets-control .control label::after{
-  font-family:var(--fa-style-family-classic);
-  content:"\f00c";
+.widgets-control .control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
   font-weight: 900;
   position: absolute;
   left: 2px;
-  color:var(--background-color);
+  color: var(--background-color);
   transform: scale(0) rotate(360deg);
-  transition: .3s;
+  transition: 0.3s;
 }
-.widgets-control .control input[type="checkbox"]:checked +label::after{
+.widgets-control .control input[type="checkbox"]:checked + label::after {
   transform: scale(1);
 }
-.backup-control .control input[type="radio"]:checked +label::before{
+.backup-control .control input[type="radio"]:checked + label::before {
   background-color: var(--background-color);
   width: 12px;
   height: 12px;
-  border: 4px solid var(--main-color) ;
+  border: 4px solid var(--main-color);
 }
 
-.backup-control .servers .server{
+.backup-control .servers .server {
   border: 1px solid var(--main-color);
   border-radius: var(--main-radius);
 }
-.backup-control .servers .server label{
+.backup-control .servers .server label {
   cursor: pointer;
 }
-.backup-control .servers input[type="radio"]:checked + .server{
+.backup-control .servers input[type="radio"]:checked + .server {
   border-color: var(--main-color-alt);
   color: var(--main-color-alt);
 }
 .toggle-checkbox,
 .widgets-control input,
-.backup-control input{
+.backup-control input {
   -webkit-appearance: none;
   appearance: none;
   display: none;
 }
-.toggle-switch{
+.toggle-switch {
   background-color: var(--background-base);
   width: 78px;
   height: 32px;
   border-radius: 16px;
   position: relative;
   transition: 0.3s;
-  cursor: pointer
+  cursor: pointer;
 }
 .toggle-switch::before {
   font-family: var(--fa-style-family-classic);
@@ -673,88 +673,183 @@ textarea:focus::placeholder {
   left: 50px;
 }
 /* Start Media */
-@media (max-width:676px) {
-  .settings-page{
+@media (max-width: 676px) {
+  .settings-page {
     grid-template-columns: minmax(200px, 1fr);
     gap: 10px;
   }
-  .backup-control .servers .server{
+  .backup-control .servers .server {
     flex-wrap: wrap;
   }
 }
 /* End Media */
 /* End Settings Page */
 /* Start Profile Page*/
-.profile-page .avater-box{
+.profile-page .avater-box {
   width: 300px;
 }
-.profile-page .avater-box > img{}
-.profile-page .avater-box .level{
+.profile-page .avater-box > img {
+}
+.profile-page .avater-box .level {
   height: 8px;
   overflow: hidden;
   margin: auto;
   width: 70%;
 }
-.profile-page .avater-box .level span{
+.profile-page .avater-box .level span {
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   height: 100%;
   background-color: var(--main-color);
 }
-.profile-page .info-box .box{
+.profile-page .info-box .box {
   flex-wrap: wrap;
-  transition: .3s;
+  transition: 0.3s;
 }
-.profile-page .info-box .box > div{
+.profile-page .info-box .box > div {
   min-width: 250px;
   padding: 10px 0 0;
 }
-.profile-page .info-box > div h4{
+.profile-page .info-box > div h4 {
   font-weight: normal;
 }
-.profile-page .skills-card{
+.profile-page .skills-card {
   flex-grow: 1;
-
 }
-.profile-page .skills-card ul{
-  
+.profile-page .skills-card ul {
 }
-.profile-page .skills-card ul li{
+.profile-page .skills-card ul li {
   padding: 15px 0;
 }
-.profile-page .skills-card ul li:not(:last-child){
+.profile-page .skills-card ul li:not(:last-child) {
   border-bottom: 1px solid var(--main-color);
 }
-.profile-page .skills-card ul li span{
+.profile-page .skills-card ul li span {
   display: inline-flex;
-  padding:4px 10px;
+  padding: 4px 10px;
   color: var(--background-base);
   background-color: var(--main-color);
   border-radius: var(--main-radius);
 }
-.profile-page .skills-card ul li span:not(:last-child){
+.profile-page .skills-card ul li span:not(:last-child) {
   margin-right: 7px;
 }
-
-.profile-page .activities{
+.profile-page .activity:not(:last-of-type) {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.profile-page .activities {
   flex-grow: 2;
 }
 
 /* Start Media */
-@media (min-width:768px) {
-  .profile-page .avater-box{
+@media (min-width: 768px) {
+  .profile-page .avater-box {
     border-right: 1px solid var(--main-color);
   }
 }
-@media (max-width:768px) {
-  .profile-page .overview{
-    flex-direction: column ;
-  }
-  .profile-page .other-data{
+@media (max-width: 768px) {
+  .profile-page .overview {
     flex-direction: column;
+  }
+  .profile-page .other-data {
+    flex-direction: column;
+  }
+  .profile-page .activities .activity {
+    flex-direction: column;
+  }
+  .profile-page .activities .activity i{
+    margin-bottom: 20px;
+  }
+  .profile-page .activities .activity .info{
+    margin-bottom: 20px;
   }
 }
 /* End Media */
 /* End Profile Page */
-
+/* Start Projects Page */
+.projects-page{
+  grid-template-columns:repeat(auto-fill,minmax(500px,1fr));
+  margin-right: 10px;
+  margin-left: 10px;
+  gap:10px;
+}
+.projects-page .date{
+  position: absolute;
+  right: 10px;
+}
+.projects-page .team{
+  position: relative;
+  min-height: 80px;
+}
+.projects-page .team a{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.projects-page .team a:nth-child(2){
+  left: 25px;
+}
+.projects-page .team a:nth-child(3){
+  left: 50px;
+}
+.projects-page .team a:nth-child(4){
+  left: 75px;
+}
+.projects-page .team a:nth-child(5){
+  left: 100px;
+}
+.projects-page .team a:hover{
+  z-index: 2;
+}
+.projects-page .team a img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.projects-page .do{
+  justify-content: flex-end;
+  border-top: 1px solid;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.projects-page .do span{
+  padding: 3px 8px;
+  margin-right: 10px;
+  width: fit-content;
+}
+.projects-page .info{
+  border-top: 1px solid;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.projects-page .info .prog{
+  height: 8px;
+  width: 200px;
+  position: relative;
+  border-radius: var(--main-radius);
+}
+.projects-page .info .prog span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.projects-page  .info{}
+/* Start Media */
+@media (max-width: 768px) {
+  .projects-page {
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  }
+  .projects-page .do{
+    flex-direction: column;
+  }
+  .projects-page .do span:not(:last-child){
+    margin-bottom: 15px;
+  }
+}
+/* End Media */
+/* End Projects Page */
