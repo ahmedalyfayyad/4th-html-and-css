@@ -121,6 +121,9 @@
     color:#121212;
     cursor: pointer;
 }
+.btn-shape:hover{
+    background-color: #A66F3F;
+}
 .line{
     height: 1px;
     width: 100%;
