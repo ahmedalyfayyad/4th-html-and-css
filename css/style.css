@@ -920,7 +920,9 @@ textarea:focus::placeholder {
   width: 200px;
   height: 200px;
 }
-.friends-page .contact{}
+.friends-page .btn-shape{
+  font-size: 10px;
+}
 .friends-page .icons{
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -932,8 +934,6 @@ textarea:focus::placeholder {
 .friends-page .icons i{
   margin-right: 5px;
 }
-.friends-page .contact{}
-.friends-page .contact{}
 /* Start Media */
 @media (max-width: 768px) {
   .friends-page {
@@ -942,3 +942,95 @@ textarea:focus::placeholder {
 }
 /* End Media */
 /* End Friends Page */
+/* Start Files Page */
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .files-page {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+.files-page .files-stats {
+  min-width: 260px;
+}
+.files-page .files-stats .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.files-page .files-stats .size {
+  margin-left: auto;
+}
+.files-page .files-stats .upload {
+  margin:15px 0;
+}
+.files-page .files-content {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files-page .files-content img {
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+.files-page .files-content .file:hover img {
+  transform: rotate(5deg);
+}
+.files-page .files-content .info {
+  border-top: 1px solid #eee;
+}
+/* End Files Page */
+/* Start Plans Page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.plans-page .plan .top {
+  border: 3px solid;
+  outline: 3px solid transparent;
+}
+.plans-page .plan .price {
+  position: relative;
+  font-size: 40px;
+  width: fit-content;
+  margin: auto;
+}
+.plans-page .plan .price span {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 25px;
+}
+.plans-page .plan ul li {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid ;
+}
+.plans-page .plan ul li .yes {
+  color: var(--main-color);
+}
+.plans-page .plan ul li i:not(.yes, .help) {
+  color: var(--main-color-alt);
+}
+.plans-page .plan ul li i:first-child {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.plans-page .plan ul li .help {
+  color: var(--grey-color);
+  margin-left: auto;
+  cursor: pointer;
+}
+/* End Plans Page */
